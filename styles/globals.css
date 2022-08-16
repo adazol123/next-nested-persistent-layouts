@@ -21,15 +21,15 @@ section {
 }
 
 a {
-  @apply bg-black/5 px-4 py-2 rounded-md;
+  @apply bg-black/5 px-4 py-4 rounded-md text-neutral-500;
 }
 a:hover {
-  @apply bg-black/10;
+  @apply bg-black/5 text-black/80;
 }
 a.active {
-  @apply bg-black text-white;
+  @apply text-black bg-black/10;
 }
 
 a.active:hover {
-  @apply bg-black/80 text-white;
+  @apply text-black;
 }
