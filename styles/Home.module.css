@@ -1,5 +1,6 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 1rem;
+  @apply grid place-content-center text-9xl  col-span-2 mx-auto;
 }
 
 .main {

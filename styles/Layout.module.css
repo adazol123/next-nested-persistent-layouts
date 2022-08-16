@@ -1,0 +1,19 @@
+.container {
+  @apply px-6;
+  @apply bg-black text-white;
+}
+.nav__bar {
+  @apply max-w-screen-md mx-auto flex justify-between items-center;
+}
+
+.people {
+  @apply flex flex-col gap-1;
+}
+
+.people > a {
+  @apply bg-black/5 px-4 py-2 rounded-md;
+}
+
+.people > a:hover {
+  @apply bg-black/10;
+}
