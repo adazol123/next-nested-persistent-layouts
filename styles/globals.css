@@ -19,3 +19,17 @@ button:focus {
 section {
   @apply grid grid-cols-3;
 }
+
+a {
+  @apply bg-black/5 px-4 py-2 rounded-md;
+}
+a.active {
+  @apply bg-black text-white;
+}
+a:hover {
+  @apply bg-black/10;
+}
+
+a.active:hover {
+  @apply bg-black/80 text-white;
+}

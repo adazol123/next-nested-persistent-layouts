@@ -14,16 +14,15 @@ type Data = {
 const PeopleLayout = () => {
     let [people, setPeople] = React.useState<Data>()
     React.useEffect(() => {
-        fetch('http://localhost:3000/api/hello').then(res => res.json()).then(res => setPeople(res))
+        fetch('http://localhost:3000/api/people').then(res => res.json()).then(res => setPeople(res))
     }, [])
     let { query } = useRouter()
-    console.log(query)
     return (
-        <div className='col-span-1 my-2'>
+        <div className='col-span-1 my-2 ml-4'>
             <div className={style.people}>
                 {people?.names && people.names.map((man, index) =>
                 (
-                    <Link href={`${index}`} key={index}><a>{man.name}</a>
+                    <Link href={`${index}`} key={index}><a className={query.uid && +query.uid === index ? 'active' : undefined}>{man.name}</a>
                     </Link>
                 ))}
 
