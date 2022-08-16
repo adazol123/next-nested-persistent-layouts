@@ -20,8 +20,8 @@ const Person: PageWithLayout = () => {
 
     return (
         <div className={styles.container}>
-            <div className=' my-2 bg-black/5 rounded-md w-full h-full grid place-content-center'>
-                {query.uid?.toString()}
+            <div className=' my-2 bg-black/5 rounded-md w-full h-full grid place-content-center font-thin'>
+                {query.uid?.toString().toUpperCase()}
             </div>
         </div>
     )

@@ -15,7 +15,7 @@ export default function handler(
   res.status(200).json({
     names: [
       {
-        name: "Danyy",
+        name: "Daniella",
         id: 1,
       },
       {
@@ -40,6 +40,14 @@ export default function handler(
       },
       {
         name: "Cia",
+        id: 7,
+      },
+      {
+        name: "Analisa",
+        id: 7,
+      },
+      {
+        name: "Mia",
         id: 7,
       },
     ],

@@ -22,7 +22,7 @@ const PeopleLayout = () => {
             <div className={style.people}>
                 {people?.names && people.names.map((man, index) =>
                 (
-                    <Link href={`${index}`} key={index}><a className={query.uid && +query.uid === index ? 'active' : undefined}>{man.name}</a>
+                    <Link href={`${man.name.toLowerCase()}`} key={index}><a className={query.uid && query.uid === man.name.toLowerCase() ? 'active' : undefined}>{man.name}</a>
                     </Link>
                 ))}
 
