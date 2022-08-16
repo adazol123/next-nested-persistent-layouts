@@ -14,7 +14,7 @@ type Data = {
 const PeopleLayout = () => {
     let [people, setPeople] = React.useState<Data>()
     React.useEffect(() => {
-        fetch('http://localhost:3000/api/people').then(res => res.json()).then(res => setPeople(res))
+        fetch('https://next-nested-persistent-layouts.vercel.app/api/people').then(res => res.json()).then(res => setPeople(res))
     }, [])
     let { query } = useRouter()
     return (
