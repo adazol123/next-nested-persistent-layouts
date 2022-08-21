@@ -10,23 +10,16 @@ import type { PageWithLayout } from './_app'
 
 const Home: PageWithLayout = () => {
 
-  return (
-    <div className={styles.container}>
-      🏈
-    </div>
-  )
+  return null
 }
 
-Home.getLayout = (page) => {
-  return (
-    <LayoutRoot>
-      <section>
-        <PeopleLayout ></PeopleLayout>
-        {page}
-      </section>
-    </LayoutRoot>
-  )
-}
+/**
+ * @description layout structure
+ * @param page 
+ * @returns React Node
+ */
+Home.getLayout = (page) => <LayoutRoot>{page}</LayoutRoot>
+
 
 
 export default Home

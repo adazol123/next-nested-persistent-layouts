@@ -19,7 +19,7 @@ const Person: PageWithLayout = () => {
     const { query } = useRouter()
 
     return (
-        <div className={styles.container}>
+        <div className={styles.person}>
             <div className=' my-2 bg-black/5 rounded-md w-full h-full grid place-content-center font-thin px-6'>
                 <h3>{query.uid?.toString().toUpperCase()}</h3>
                 <p className='text-xs max-w-xs text-neutral-500'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim facere nam molestiae tenetur nihil!</p>
@@ -28,16 +28,13 @@ const Person: PageWithLayout = () => {
     )
 }
 
-Person.getLayout = (page) => {
-    return (
-        <LayoutRoot>
-            <section>
-                <PeopleLayout ></PeopleLayout>
-                {page}
-            </section>
-        </LayoutRoot>
-    )
-}
+
+/**
+ * @description layout structure
+ * @param page 
+ * @returns React Node
+ */
+Person.getLayout = (page) => <LayoutRoot>{page}</LayoutRoot>
 
 
 

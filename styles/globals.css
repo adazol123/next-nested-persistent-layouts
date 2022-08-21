@@ -17,14 +17,14 @@ button:focus {
 }
 
 section {
-  @apply grid grid-cols-3;
+  @apply grid grid-cols-1 sm:grid-cols-3;
 }
 
 a {
-  @apply bg-black/5 px-4 py-4 rounded-md text-neutral-500;
+  @apply bg-black/5 px-4 py-4 rounded-md text-neutral-500  transition-all duration-75;
 }
 a:hover {
-  @apply bg-black/5 text-black/80;
+  @apply bg-black/5 text-black/80 shadow -translate-y-[1px];
 }
 a.active {
   @apply text-black bg-black/10;

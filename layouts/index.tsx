@@ -2,6 +2,7 @@ import { NextPageContext } from 'next'
 import Head from 'next/head'
 import React from 'react'
 import style from '../styles/Layout.module.css'
+import PeopleLayout from './people'
 export type Props = {
     children: React.ReactNode
 }
@@ -18,10 +19,13 @@ const LayoutRoot: React.FC<Props> = (props) => {
                     <button type='button'>Login</button>
                 </nav>
             </header>
-
-            {props.children}
+            <section>
+                <PeopleLayout ></PeopleLayout>
+                {props.children}
+            </section>
         </>
     )
 }
+
 
 export default LayoutRoot

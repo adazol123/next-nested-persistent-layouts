@@ -14,11 +14,11 @@ type Data = {
 const PeopleLayout = () => {
     let [people, setPeople] = React.useState<Data>()
     React.useEffect(() => {
-        fetch('https://next-nested-persistent-layouts.vercel.app/api/people').then(res => res.json()).then(res => setPeople(res))
+        fetch('http://localhost:3000/api/people').then(res => res.json()).then(res => setPeople(res))
     }, [])
     let { query } = useRouter()
     return (
-        <div className='col-span-1 my-2 ml-4'>
+        <div className='col-span-1 my-2 mx-2'>
             <div className={style.people}>
                 {people?.names && people.names.map((man, index) =>
                 (
