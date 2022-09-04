@@ -5,12 +5,12 @@ import LayoutRoot, { Props } from '../layouts'
 import PeopleLayout from '../layouts/people'
 import styles from '../styles/Home.module.css'
 import Person from './[uid]'
-import type { PageWithLayout } from './_app'
+import type { NextPageWithLayout } from './_app'
 
 
-const Home: PageWithLayout = () => {
+const Home: NextPageWithLayout = () => {
 
-  return null
+  return <div>Hello</div>
 }
 
 /**
