@@ -3,13 +3,14 @@ import Head from 'next/head'
 import React from 'react'
 import style from '../styles/Layout.module.css'
 import PeopleLayout from './people'
+import PropsLayout from './props'
 export type Props = {
     children: React.ReactNode
 }
 
 const LayoutRoot: React.FC<Props> = (props) => {
     return (
-        <>
+        <PropsLayout>
             <Head>
                 <title>Adazolhub | Nested Layout</title>
             </Head>
@@ -23,7 +24,7 @@ const LayoutRoot: React.FC<Props> = (props) => {
                 <PeopleLayout ></PeopleLayout>
                 {props.children}
             </section>
-        </>
+        </PropsLayout>
     )
 }
 

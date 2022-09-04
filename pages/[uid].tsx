@@ -6,7 +6,7 @@ import React from 'react'
 import LayoutRoot, { Props } from '../layouts'
 import PeopleLayout from '../layouts/people'
 import styles from '../styles/Home.module.css'
-import type { PageWithLayout } from './_app'
+import type { NextPageWithLayout } from './_app'
 
 type Data = {
     names: Array<{
@@ -15,7 +15,7 @@ type Data = {
     }>;
 };
 
-const Person: PageWithLayout = () => {
+const Person: NextPageWithLayout = () => {
     const { query } = useRouter()
 
     return (
